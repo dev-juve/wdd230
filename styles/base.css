@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 3fr;
+    background-color: darkgray;
+    height: 120px;
+    margin: 0 auto;
+}
+
+header img {
+    display: block;
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: center;
+}
+
+header span {
+    grid-column: 2/3;
+    font-family: "Playwrite US Trad", cursive;
+    font-weight: 400;
+    font-size: xx-large;
+    align-self: center;
+    justify-self: center;
+    color: white;
+}
+
+nav {
+    background-color: lightcyan;
+    max-width: 800px;
+    margin: -16px auto;
+}
+
+nav ul {
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
+
+/* nav li {
+    margin: 0 auto; 
+    justify-self:auto; 
+    border: 5px black solid;
+    max-width: 800px;
+ } */
+
+nav a {
+    display: block;
+    color: darkblue;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: darkblue;
+    color: aliceblue;
+
+}
+
+.active {
+    background-color: aqua;
+}
+
+body {
+    font-family: Roboto;
+    margin: 1rem auto;
+}
+
+header {
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+main {
+    display: grid;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+
+}
+
+h1 {
+    display: block;
+    font-size: 1.16rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -6px;
+    grid-column: 1/2;
+}
+
+h2 {
+    font-size: 1.16rem;
+    text-align: center;
+    background-color: lightskyblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+hr {
+    width: 100%;
+    grid-column: 1/2;
+    background-color: grey;
+    height: 3px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.card {
+    grid-column: 1/2;
+    width: 100%;
+    margin: 1rem auto;
+    border: 1.5px solid lightgrey;
+    border-radius: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#section-1 ul {
+    list-style: none;
+}
+
+#section-2 {
+    text-align: center;
+}
+
+
+footer {
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: lightskyblue;
+}
+
+footer p {
+    text-align: center;
+}

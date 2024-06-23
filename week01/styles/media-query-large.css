@@ -1,11 +1,18 @@
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 641px) {
     header {
         background-color: black;
         color: white;
     }
 
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
     main {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
     }
+
+
 }
