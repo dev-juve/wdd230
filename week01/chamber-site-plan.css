@@ -36,6 +36,9 @@ p {
 }
 
 img {
+    width: 500px;
+    height: 875px;
     margin: 0 auto; 
     display: block;
+
 }
