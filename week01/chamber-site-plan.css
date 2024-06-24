@@ -34,16 +34,18 @@ p {
 .wireframe {
     margin-top: 20px;
 }
+a {
+    color: #778DA9;
+    margin-left: 20px;
 
+}
+a:hover{
+    color: #1B263B;
+}
 img {
     width: 500px;
     height: 500px;
     margin: 20px; 
     display: block;
 
-}
-
-iframe {
-    width: 500px;
-    height: 500px;
 }
