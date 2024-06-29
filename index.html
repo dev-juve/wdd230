@@ -6,16 +6,23 @@
     <title>Juvenson Elizaire - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="My name is Juvenson Elizaire, a student at BYU-Idaho. This webpage is my 'course assignment portal', it's designed to demonstrate my prerequisite knowledge and understanding for the 'WDD 230 - Web Frontend Development' course.">
     <meta name="author" content="Juvenson Elizaire">
+    <meta property="og:title" content="Course Home Page - WDD230">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="This webpage is a 'course assignment portal', it's designed to demonstrate my prerequisite knowledge and understanding for the 'WDD 230 - Web Frontend Development' course.">
+    <meta property="og:image" content="https://drive.google.com/file/d/1hxRdPVggCvcWcP5QopyI-VrPkjWqCI7P/view?usp=drive_link">
+    <meta rel="canonical" property="og:url" content="https://dev-juve.github.io/wdd230/index.html">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/larger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="./favicon.ico">
 </head>
 <body>
     <header>
         <img src="images/profile.png" alt="Juvenson Elizaire" width="80" height="80">
-        <span>Juvenson Elizaire</span>
+        <span id="hook">Juvenson Elizaire</span>
     </header>
     <nav>
         <ul>
@@ -65,5 +72,6 @@
         <p id="lastModified"></p>
     </footer>
     <script src="./scripts/getDates.js"></script>
+    <script src="./scripts/hamburger-menu.js"></script>
 </body>
 </html>

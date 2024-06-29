@@ -6,7 +6,7 @@ header {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 3fr;
-    background-color: darkgray;
+    background-color: #415A77;
     height: 120px;
     margin: 0 auto;
 }
@@ -16,6 +16,7 @@ header img {
     grid-column: 1/2;
     align-self: center;
     justify-self: center;
+    background-color: lightgrey;
 }
 
 header span {
@@ -139,3 +140,56 @@ footer {
 footer p {
     text-align: center;
 }
+
+
+/* small view navigation */
+#menuButton {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: white;
+	position: absolute;
+	top: 4rem;
+	right: 1rem;
+}
+
+#menuButton::before {
+	content: "☰";
+}
+
+#menuButton.open::before {
+	content: "X";
+}
+
+#menuButton:hover {
+    font-size: xx-large;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: lightcyan;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: darkblue;;
+}
+.navigation a:hover {
+	background-color: darkblue;
+    color: aliceblue;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+/* .active::before {  
+	content: "📍";  /* just a wayfinding symbol for the user
+} */
