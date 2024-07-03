@@ -10,4 +10,8 @@
         flex-direction: row;
         gap: 4rem;
     }
+
+    .hamburger-menu {
+        display: none;
+    }
 }

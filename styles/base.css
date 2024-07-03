@@ -6,7 +6,7 @@ header {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 3fr;
-    background-color: #415A77;
+    background-color: hsl(212, 29%, 36%);
     height: 120px;
     margin: 0 auto;
 }
