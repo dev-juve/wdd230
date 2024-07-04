@@ -120,6 +120,15 @@ main {
     padding: 20px;
 }
 
+.quick-links a {
+    color: #E0E1DD;
+  }
+
+.quick-links a:hover {
+    background: rgb(255, 255, 255);
+    color: #551a8b
+}
+
 .events, .weather, .spotlights {
     background: #0D1B2A;
     color: #E0E1DD;
