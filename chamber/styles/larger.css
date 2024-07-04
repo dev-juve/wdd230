@@ -1,0 +1,14 @@
+@media screen and (min-width: 769px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+}
