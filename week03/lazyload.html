@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='author' content='Juvenson Elizaire'>
+    <meta name='description' content="A learning and demonstration activity on how the 'lazy load' feature works">
+    <title>Lazy Load Images</title>
+    <link rel="stylesheet" href="./styles/lazyload.css">
+</head>
+<body>
+    <header>
+        <h1>Lazy Load Images Demonstration</h1>
+    </header>
+    <main>
+        <img src="./images/pexels-djordje-petrovic-1.webp" data-src="./images/pexels-djordje-petrovic-1.webp" alt="Image 1" width="400" height="600" loading="lazy">
+        <img src="./images/pexels-pixabay-2.webp" data-src="./images/pexels-pixabay-2.webp" alt="Image 2" width="400" height="600" loading="lazy">
+        <img src="./images/pexels-divinetechygirl-3.webp" data-src="./images/pexels-divinetechygirl-3.webp" alt="Image 3" width="400" height="600" loading="lazy">
+        <img src="./images/pexels-cottonbro-4.webp" data-src="./images/pexels-cottonbro-4.webp" alt="Image 4" width="400" height="600" loading="lazy">
+        <img src="./images/pexels-fauxels-5.webp" data-src="./images/pexels-fauxels-5.webp" alt="Image 5" width="400" height="600" loading="lazy">
+        <img src="./images/pexels-divinetechygirl-6.webp" data-src="./images/pexels-divinetechygirl-6.webp" alt="Image 6" width="400" height="600" loading="lazy">
+    </main>
+    <footer>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="./scripts/lazyload.js"></script>
+</body>
+</html>
