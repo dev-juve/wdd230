@@ -21,8 +21,8 @@
 </head>
 <body>
     <header>
-        <img src="images/Juvenson-removebg-preview.jpg" alt="Juvenson Elizaire" width="80" height="80">
-        <span id="hook">Juvenson Elizaire</span>
+        <img src="./images/juvenson-profile-picture.webp" loading="lazy" alt="Juvenson Elizaire" width="80" height="84">
+        <p id="hook">Juvenson Elizaire</p>
     </header>
     <nav>
         <ul>
@@ -32,8 +32,16 @@
             <li><a href="#">Form</a></li>
         </ul>
     </nav>
-    <main>
+    <div class="hero">
+        <picture>
+            <source id="source" srcset="./images/01-Port-au-Prince-Haiti-Temple-daylight-small.webp" media="(max-width: 400px)">
+            <!-- <source srcset="./images/hero-medium.webp" media="(max-width: 1000px)"> -->
+            <img id="hero-img" loading="lazy" src="./images/01-Port-au-Prince-Haiti-Temple-daylight-large.webp" alt="Port-au-Prince Temple" width="960" height="480">
+        </picture>
+        <span>P-au-P Haiti Temple</span>
         <div id="mode">🕶️</div>
+    </div>
+    <main>
         <h1>WDD 230: Web Frontend Development</h1>
         
         <hr>
@@ -65,15 +73,16 @@
         </section>
         <section class="card" id="section-2">
             <h2>Information</h2>
-            <p>Port-au-Prince, Haiti<br>☀️ 34°C<br>Page Visits: 12</p>
+            <p>Port-au-Prince, Haiti<br>☀️ 34°C<br>Page Visits: <span id="numVisits"></span></p>
         
         </section>
+        <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7565.765025951971!2d-72.34338791325494!3d18.534210602665492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb9dd53e0629195%3A0xbda0d3d5134a65ae!2sPacot%2C%20Port-au-Prince!5e0!3m2!1sfr!2sht!4v1720363614655!5m2!1sfr!2sht" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
         <p>&copy;<span id="year"></span>  Juvenson Elizaire, Port-au-Prince 🇭🇹</p>
         <p id="lastModified"></p>
     </footer>
-    <script src="./scripts/getDates.js"></script>
+    <script src="./scripts/getDate.js"></script>
     <script src="./scripts/course-homepage.js"></script>
 </body>
 </html>
