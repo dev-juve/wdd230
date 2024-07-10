@@ -30,3 +30,14 @@ handleHamburgerMenu();
 
 // Handle window resize
 window.addEventListener('resize', handleHamburgerMenu);
+
+
+// Active nav links effect
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+        if (link.href === window.location.href) {
+            link.classList.add('active');
+        }
+    });
+});

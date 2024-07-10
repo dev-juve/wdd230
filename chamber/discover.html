@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Port-au-Prince Chamber of Commerce</title>
+    <meta name="description" content="The Port-au-Prince Chamber of Commerce supports local businesses and promotes economic development in Port-au-Prince, Haiti.">
+    <meta name="author" content="Juvenson Elizaire">
+    <link rel="icon" href="./favicon-16x16.png" type="image/x-icon">
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Port-au-Prince Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.ibb.co/19G4crc/MARCH-EN-FER-696x568-1.jpg">
+    <meta property="og:url" content="https://dev-juve.github.io/wdd230/chamber/index.html">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="./styles/base.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="./index.html"><img src="./images/p-au-p-chamber-of-commerce-high-resolution-logo.webp" alt="Port-au-Prince Chamber of Commerce Logo"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="./discover.html">Events</a></li>
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content-wrapper2">
+            <aside class="sidebar2">
+                <div id="visitorGreeting"></div>
+                <div class="demographics">
+                    <h3>Demographics</h3>
+                    <p>Population: Approximately 1.2 million</p>
+                    <p>Languages: Haitian Creole, French</p>
+                    <p>Religion: Predominantly Roman Catholic, with Protestant and Vodou elements</p>
+                </div>
+                <div class="economy">
+                    <h3>Economy</h3>
+                    <p>Principal port and commercial center of Haiti</p>
+                    <p>Major products: textiles, cement, soap, food processing</p>
+                </div>
+                <div class="culture">
+                    <h3>Culture</h3>
+                    <p>Notable sites: Marché en Fer, MUPANAH, Gingerbread Houses</p>
+                </div>
+                <div class="education">
+                    <h3>Education</h3>
+                    <p>Home to several universities, including the University of Haiti (UEH)</p>
+                </div>
+                <div class="attractions">
+                    <h3>Attractions</h3>
+                    <p>Champ de Mars, Musée d'Art Haïtien, El-Saieh Gallery</p>
+                </div>
+                <div class="climate">
+                    <h3>Climate</h3>
+                    <p>Tropical wet and dry climate</p>
+                    <p>Average temperatures: 23°C (January) to 28°C (July)</p>
+                    <p>Rainy season: April to October</p>
+                </div>
+                <div class="calendar">
+                    <h3>Calendar</h3>
+                    <div id="calendar"></div>
+                </div>
+            </aside>
+            <section class="main-content2">
+                <h2 id="gal-h2">Gallery</h2>
+                <div class="gallery">
+                    <div class='img-box'>
+                        <img src="./images/street-market3.webp" alt="sideroad seller" loading="lazy" width="750" height="907">
+                        <span class="caption">A madansara sitting in her sideroad Fruits & Vegs store</span>
+                    </div>
+                    <div class='img-box'>
+                        <img src="./images/haitian_art_market-750x330.webp" alt="street art gallery" loading="lazy" width="750" height="330">
+                        <span class="caption">A typical exposition of work of arts in P-au-P streets</span>
+                    </div>
+                    <div class='img-box'>
+                        <img src="./images/fritay.webp" alt="fritay" loading="lazy" width="750" height="394">
+                        <span class="caption">A fritay dish</span>
+                    </div>
+                    <div class='img-box'>
+                        <img src="./images/fresko.webp" alt="fresko" loading="lazy" width="750" height="645">
+                        <span class="caption">The mobile tub of a fresko seller</span>
+                    </div>
+                    <div class='img-box'>
+                        <img src="./images/livre-en-folie.webp" alt="Livre en Folie" loading="lazy" width="750" height="500">
+                        <span class="caption">A photo captured at Livres en Folie</span>
+                    </div>
+                    <div class='img-box'>
+                        <img src="./images/mobile-bar.webp" alt="mobile bar" loading="lazy" width="750" height="442">
+                        <span class="caption">The face of a mobile haitian street bar</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Contact us: info@portauprincechamber.com | +509 123 4567</p>
+        <p>WDD 230 Project by Juvenson Elizaire | Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <script>
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+    <script src="./scripts/discover.js"></script>
+    <script src="./scripts/chamber.js"></script>
+</body>
+</html>
