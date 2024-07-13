@@ -1,0 +1,48 @@
+body {
+    margin: 0 auto;
+}
+
+main {
+    margin: 100px auto;
+    max-width: 200px;
+}
+
+table {
+    margin: 10px auto;
+    border: grey 1px solid;
+    box-shadow: 0 0 10px grey;
+    background: hsla(0, 0%, 1%, 0.068);
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: 0.8rem;
+}
+
+thead tr:nth-child(odd) {
+    background-color: rgba(0, 139, 139, 0.5);
+    color: black;
+}
+
+thead tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+tbody {
+    background-color: whitesmoke;
+}
+
+tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.363);
+}
+
+
+td, th {
+    padding: 20px;
+    text-align: center;
+}
+
+span {
+    white-space: nowrap;
+}

@@ -329,6 +329,11 @@ footer {
     .content-wrapper2 {
         display: flex;
         flex-direction: column;
+        padding: 20px 5px;
+    }
+
+    #gal-h2 {
+        padding-left: 10px;
     }
 
     .main-content2, .sidebar2 {
