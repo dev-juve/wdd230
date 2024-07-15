@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juvenson Elizaire - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="My name is Juvenson Elizaire, a student at BYU-Idaho. This webpage is my 'course assignment portal', it's designed to demonstrate my prerequisite knowledge and understanding for the 'WDD 230 - Web Frontend Development' course.">
+    <meta name="author" content="Juvenson Elizaire">
+    <meta property="og:title" content="Course Home Page - WDD230">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="This webpage is a 'course assignment portal', it's designed to demonstrate my prerequisite knowledge and understanding for the 'WDD 230 - Web Frontend Development' course.">
+    <meta property="og:image" content="https://drive.google.com/file/d/1hxRdPVggCvcWcP5QopyI-VrPkjWqCI7P/view?usp=drive_link">
+    <meta property="og:url" content="https://dev-juve.github.io/wdd230/index.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="./favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="./images/juvenson-profile-picture.webp" loading="lazy" alt="Juvenson Elizaire" width="80" height="84">
+        <p id="hook">Juvenson Elizaire</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 id="form-header">Registration to the WDD230 Team</h1>
+        <form action="record.html" method="get" class="homepage-form">
+            <label for="username">Username<input type="text" id="username" name="username" required></label>
+            <label for="password">Password<input type="password" id="password" name="password" pattern="(?=.*[a-zA-Z])(?=.*[0-9])[a-zA-Z0-9]+" title="Password must be alphanumeric and contain at least one letter and one number" minlength="8" required></label>
+            <label for="confirm-password">Confirm Password<input type="password" id="confirm-password" name="confirm-password" pattern="(?=.*[a-zA-Z])(?=.*[0-9])[a-zA-Z0-9]+" title="Must match what you entered above" minlength="8" required></label>
+            <label for="email">Email<input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" title="Please enter a valid email address (from byui.edu domain)" placeholder="bill24009@byui.edu" required></label>
+            <label for="homepage-rating">Page Rating</label>
+            <div id="rangevalue">1</div>
+            <input type="range" id="homepage-rating" name="rating" step="1" min="1" max="10" value="1" list="rangevalues">
+            <datalist id="rangevalues">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </datalist>
+
+            <input type="submit" value="Join The WDD230 Team">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span>  Juvenson Elizaire, Port-au-Prince 🇭🇹</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="./scripts/getDate.js"></script>
+    <script src="./scripts/form.js"></script>
+    <script src="/scripts/course-homepage.js"></script>
+</body>
+</html>

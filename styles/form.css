@@ -1,0 +1,68 @@
+:root {
+    --primary-color: darkblue;
+    --secondary-color: darkgray;
+    --background-color: whitesmoke;
+    --highlight-color: red;
+    --valid-color: green;
+}
+
+#form-header {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+
+.homepage-form input {
+    display: block;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--background-color);
+    border: var(--secondary-color) 1px solid;
+    border-radius: 6px;
+    padding: .75rem;
+    /* appearance: none; */
+}
+
+.homepage-form label {
+    display: block;
+    text-align: left;
+    color: blue;
+}
+
+input[type="submit"] {
+    text-align: center;
+    width: 90%;
+    padding: 0.7rem;
+    max-width: 350px;
+    margin: 5px 5% 6px 5%;
+    background-color: hsl(212, 29%, 36%);
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--primary-color);
+}
+
+#password:required, #confirm-password:required {
+    border-right: 6px var(--highlight-color) solid;
+}
+
+#password:required:valid, #confirm-password:required:valid {
+    border-right: 6px var(--valid-color) solid;
+}
+
+#rangevalue {
+    display: flex;
+    font-size: 2rem;
+    color: var(--primary-color);
+    align-self: start;
+}
+
+/* #rangevalues {
+    display: flex;
+    margin: 0 0 0 25px;
+    width: 200px;
+} */
