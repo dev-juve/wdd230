@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Port-au-Prince Chamber of Commerce</title>
+    <meta name="description" content="Apply to join the Port-au-Prince Chamber of Commerce and become part of a network that supports local businesses.">
+    <meta name="author" content="Juvenson Elizaire">
+    <link rel="icon" href="./favicon-16x16.png" type="image/x-icon">
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Join the Port-au-Prince Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.ibb.co/19G4crc/MARCH-EN-FER-696x568-1.jpg">
+    <meta property="og:url" content="https://dev-juve.github.io/wdd230/chamber/join.html">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="./styles/base.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="./index.html"><img src="./images/p-au-p-chamber-of-commerce-high-resolution-logo.webp" alt="Port-au-Prince Chamber of Commerce Logo"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="./discover.html">Events</a></li>
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content-wrapper3">
+            <div class="form-section">
+                <h1>PCC's Membership Application</h1>
+                <form action="thankyou.html" method="get">
+                    <label for="first-name">First Name:
+                        <input type="text" id="first-name" name="firstName" required>
+                    </label>
+                    <label for="last-name">Last Name:
+                        <input type="text" id="last-name" name="lastName" required>
+                    </label>
+                    <label for="title">Title/Position:
+                        <input type="text" id="title" name="title" pattern="[A-Za-z\s\-]{7,}" required>
+                    </label>
+                    <label for="email">Email:
+                        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                    </label>
+                    <label for="phone">Mobile Phone:
+                        <input type="tel" id="phone" name="phone" required>
+                    </label>
+                    <label for="organization">Organization Name:
+                        <input type="text" id="organization" name="organization" required>
+                    </label>
+                    <fieldset id="fieldset">
+                        <legend>Membership Level:</legend>
+                        <label class="button" for="np-membership">
+                            <input type="radio" id="np-membership" name="membershipLevel" value="NP Membership" required> NP Membership (No Fee)
+                        </label>
+                        <label class="button" for="bronze-membership">
+                            <input type="radio" id="bronze-membership" name="membershipLevel" value="Bronze Membership" required> Bronze Membership
+                        </label>
+                        <label class="button" for="silver-membership">
+                            <input type="radio" id="silver-membership" name="membershipLevel" value="Silver Membership" required> Silver Membership
+                        </label>
+                        <label class="button" for="gold-membership">
+                            <input type="radio" id="gold-membership" name="membershipLevel" value="Gold Membership" required> Gold Membership
+                        </label>
+                    </fieldset>
+                    <label for="description">Organization Description:
+                        <textarea id="description" name="description"></textarea>
+                    </label>
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+                    <input type="submit" value="Join The P-au-P Chamber Of Commerce">
+                </form>
+            </div>
+            <div class="benefits-section">
+                <h2>Membership Benefits</h2>
+                <ul>
+                    <li><strong>NP Membership:</strong> Access to networking events, basic training sessions.</li>
+                    <li><strong>Bronze Membership:</strong> Includes NP benefits plus advertising opportunities, event discounts.</li>
+                    <li><strong>Silver Membership:</strong> Includes Bronze benefits plus spotlight positions on the home page, premium training.</li>
+                    <li><strong>Gold Membership:</strong> Includes Silver benefits plus VIP event access, special recognition at events.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Contact us: info@portauprincechamber.com | +509 123 4567</p>
+        <p>WDD 230 Project by Juvenson Elizaire | Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <script>
+        document.getElementById("lastModified").textContent = document.lastModified;
+        document.getElementById("timestamp").value = new Date().toISOString();
+    </script>
+    <script src="./scripts/chamber.js"></script>
+</body>
+</html>
