@@ -31,9 +31,13 @@
       {
         "week": "Week 3",
         "links": [
+        {
+            "url": "./week03/images/pexels-pixabay-158316.webp",
+            "title": "WebP"
+        },
           {
             "url":"week03/bom.html",
-            "title":"Basic JS"
+            "title":"localStorage"
           },
           {
             "url":"week03/lazyload.html",
@@ -41,7 +45,7 @@
           },
           {
             "url":"week03/responsive-images.html",
-            "title":"Images Responsiveness"
+            "title":"Responsive Images"
           }
         ]
       },
@@ -49,13 +53,21 @@
       {
         "week": "Week 4",
         "links": [
+            {
+            "url": "https://codepen.io/dev-juve/pen/YzoPrbw",
+            "title": "CSS Pseudo Classes"
+            },
+            {
+             "url": "https://ibb.co/t4HgPXH",
+            "title": "CSS Combinators"
+            },
           {
             "url":"week04/index.html",
-            "title":"HTML Forms Related"
+            "title":"HTML Forms"
           },
           {
             "url":"week04/tablebuild.html",
-            "title":"HTML Tables Related"
+            "title":"HTML Tables"
           }
         ]
       },
@@ -63,13 +75,22 @@
       {
         "week": "Week 5",
         "links": [
+
+            {
+                "url": "https://codepen.io/dev-juve/pen/MWMaNLY",
+                "title": "CSS Pseudo-Elements"
+              },
+              {
+                "url": "./week05/new-ward-members.json",
+                "title": "JSON"
+              },
           {
             "url":"week05/prophets.html",
             "title":"Fetch API"
           },
           {
             "url":"week05/weather.html",
-            "title":"Open Weather API"
+            "title":"Weather API"
           }
         ]
       }
