@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Directory - Port-au-Prince Chamber of Commerce</title>
+    <meta name="description" content="Directory of members of the Port-au-Prince Chamber of Commerce.">
+    <meta name="author" content="Juvenson Elizaire">
+    <link rel="icon" href="./favicon-16x16.png" type="image/x-icon">
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Member Directory - Port-au-Prince Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.ibb.co/19G4crc/MARCH-EN-FER-696x568-1.jpg">
+    <meta property="og:url" content="https://dev-juve.github.io/wdd230/chamber/directory.html">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="./styles/base.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="./index.html"><img src="./images/p-au-p-chamber-of-commerce-high-resolution-logo.webp" alt="Port-au-Prince Chamber of Commerce Logo"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="./discover.html">Events</a></li>
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="view-toggle">
+            <button id="grid-view">Grid View</button>
+            <button id="list-view">List View</button>
+        </div>
+        <div id="directory" class="grid"></div>
+    </main>
+    <footer>
+        <p>Contact us: info@portauprincechamber.com | +509 123 4567</p>
+        <p>WDD 230 Project by Juvenson Elizaire | Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <script>
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+    <script src="./scripts/directory.js"></script>
+    <script src="./scripts/chamber.js"></script>
+</body>
+</html>

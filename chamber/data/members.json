@@ -1,0 +1,66 @@
+[
+    {
+      "name": "Branah",
+      "address": "Toussaint Louverture Bld, Port-au-Prince, Haiti",
+      "phone": "+509 2814 7777",
+      "website": "https://www.brana.ht/verify/?redirect=https://www.brana.ht/",
+      "image": "https://www.brana.ht/wp-content/uploads/2018/09/Background.png",
+      "membershipLevel": "Gold",
+      "description": "The one and the only one Haiti's brewery."
+    },
+    {
+      "name": "Barbancourt",
+      "address": "16, Route Nationale #1, Damien Plaine du Cul-de-Sac, Haiti",
+      "phone": "+509 2811 8080",
+      "website": "https://www.barbancourt.com/",
+      "image": "https://www.barbancourt.com/_nuxt/img/Logo_white.6fbac40.png",
+      "membershipLevel": "Silver",
+      "description": "Making Haiti's pride worldwide since 1862."
+    },
+    {
+      "name": "Epi D'OR",
+      "address": "520, Delmas 56, Autoroute de Delmas, Delmas, Haiti",
+      "phone": "+509 3732 0219",
+      "website": "https://www.epidorhaiti.com/",
+      "image": "https://www.epidorhaiti.com/res/img/logo-mini.png",
+      "membershipLevel": "Bronze",
+      "description": "Committed to quality."
+    },
+    {
+      "name": "Tipri",
+      "address": "Angle rue Darguin et Rue Dr. L. Wallon, Pétion-Ville, Haiti",
+      "phone": "+509 3789 3131",
+      "website": "https://tipriht.com/",
+      "image": "https://tipriht.com/cdn/shop/files/Tipri_Icon_e9c9a140-5673-4525-986c-d1eb0497cef4.webp?v=1710217161&width=90",
+      "membershipLevel": "Bronze",
+      "description": "Retail store."
+    },
+    {
+      "name": "Delimart",
+      "address": "654 Cedar St, Port-au-Prince, Haiti",
+      "phone": "+509 2813 1249",
+      "website": "https://www.delimart.ht/",
+      "image": "https://www.delimart.ht/img/logo-delimart-curve.png",
+      "membershipLevel": "Gold",
+      "description": "An innovative supermarket chain."
+    },
+    {
+      "name": "House of Beer",
+      "address": "5B ruelle Carlstrouem, Port-au-Prince, Haiti",
+      "phone": "+509 2813 1249",
+      "website": "https://www.flow.page/houseofbeer",
+      "image": "https://www.flow.page/_next/image?url=https%3A%2F%2Fcdn.flowpage.com%2Fimages%2Fcc97fbaf-1965-4a18-b161-6528ce46b13d-profile-picture%3Fm%3D1619464141&w=256&q=75",
+      "membershipLevel": "Silver",
+      "description": "Dedicated to excellence."
+    },
+    {
+      "name": "Fubar",
+      "address": "89 Rigaud, Pétion-Ville, Haiti",
+      "phone": "+509 4356 7890",
+      "website": "www.fubarhaiti.com",
+      "image": "https://ugc.production.linktr.ee/b9899a14-ae5c-4de7-9865-ca9c8b0e2863_FUBAR-GoldTexture.jpeg?io=true&size=avatar-v3_0",
+      "membershipLevel": "Bronze",
+      "description": " A prestigious pub chain."
+    }
+  ]
+  
