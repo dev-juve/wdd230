@@ -6,8 +6,8 @@ async function getLinks() {
         const response = await fetch(linksURL);
         if (response.ok) {
             const data = await response.json();
-            // console.table(data);
-            displayLinks(data);
+            // console.log(data);
+            displayLinks(data.weeks); // Pass only 'weeks' to the function
         } else {
             throw Error(await response.text());
         }
@@ -16,8 +16,29 @@ async function getLinks() {
     }
 }
 
-getLinks();
+function displayLinks(weeks) {
+    const learningActivities = document.getElementById('learning-activities');
+    learningActivities.innerHTML = ''; // Clear any existing content
 
-const displayLinks = (weeks) => {
-    
+    weeks.forEach(week => {
+        const weekItem = document.createElement('li');
+        weekItem.textContent = `${week.week}: `;
+
+        week.links.forEach(link => {
+            const linkElement = document.createElement('a');
+            linkElement.href = link.url;
+            linkElement.textContent = link.title;
+            linkElement.target = "_blank"; // Open in new tab
+
+            weekItem.appendChild(linkElement);
+            weekItem.appendChild(document.createTextNode(' | ')); // Add separator
+        });
+
+        // Remove the last separator
+        weekItem.lastChild.remove();
+
+        learningActivities.appendChild(weekItem);
+    });
 }
+
+getLinks();

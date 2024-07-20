@@ -157,6 +157,21 @@ hr {
     text-align: center;
 }
 
+#section-2 p {
+    margin-bottom: -10px;
+}
+
+#section-2 p:nth-child(3) {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: -10px;
+}
+
+#icon {
+    background-color: rgba(173, 216, 230, 0.5);
+}
 
 footer {
     max-width: 100%;

@@ -87,3 +87,37 @@ if (visits !== 0) {
 visits++;
 
 window.localStorage.setItem("numOfVisits", visits);
+
+
+// Open Weather API Implementation
+const icon = document.querySelector("#icon");
+const temperature = document.querySelector("#temp");
+const description = document.querySelector("#desc");
+const url = "https://api.openweathermap.org/data/2.5/weather?lat=18.554935655303765&lon=-72.31811131478877&appid=7a980356dd8212c636fe928d334a418a&units=imperial"
+
+async function getWeatherData() {
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            console.table(data);
+            displayWeatherInfo(data);
+        }
+        else {
+            throw Error(await response.text());
+        }
+    }
+    catch(error) {
+            console.log(error);
+    }
+}
+
+getWeatherData();
+
+const displayWeatherInfo = (data) => {
+    icon.setAttribute("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
+    icon.setAttribute("alt", `${data.weather[0].description}`);
+    // icon.setAttribute("background-color", "lightblue");
+    temperature.innerHTML = `${data.main.temp}&deg;F`;
+    description.textContent = `${data.weather[0].description}`;
+}
