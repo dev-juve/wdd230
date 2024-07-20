@@ -118,5 +118,5 @@ const displayWeatherInfo = (data) => {
     icon.setAttribute("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
     icon.setAttribute("alt", `${data.weather[0].description}`);
     temperature.innerHTML = `${data.main.temp}&deg;F`;
-    description.textContent = `${data.weather[0].description}`;
+    description.textContent = `- ${data.weather[0].description}`;
 }
