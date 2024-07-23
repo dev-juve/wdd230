@@ -57,10 +57,17 @@ nav a {
     text-decoration: none;
 }
 
+nav a:link {
+    color: darkblue;
+}
+
+nav a:visited {
+    color: rgba(0, 0, 255, 0.5);
+}
+
 nav a:hover {
     background-color: darkblue;
     color: aliceblue;
-
 }
 
 .active {

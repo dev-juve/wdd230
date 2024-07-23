@@ -88,12 +88,25 @@ visits++;
 
 window.localStorage.setItem("numOfVisits", visits);
 
+// Active nav links effect
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+        if (link.href === window.location.href) {
+            link.classList.add('active');
+        }
+        else {
+            link.classList.remove("active");
+        }
+    });
+});
+
 
 // Open Weather API Implementation
 const icon = document.querySelector("#icon");
 const temperature = document.querySelector("#temp");
 const description = document.querySelector("#desc");
-const url = "https://api.openweathermap.org/data/2.5/weather?lat=18.554935655303765&lon=-72.31811131478877&appid=7a980356dd8212c636fe928d334a418a&units=imperial";
+const url = "https://api.openweathermap.org/data/2.5/weather?lat=18.554935655303765&lon=-72.31811131478877&appid=7a980356dd8212c636fe928d334a418a&units=metric";
 
 async function getWeatherData() {
     try {
@@ -117,6 +130,6 @@ getWeatherData();
 const displayWeatherInfo = (data) => {
     icon.setAttribute("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
     icon.setAttribute("alt", `${data.weather[0].description}`);
-    temperature.innerHTML = `${data.main.temp}&deg;F`;
+    temperature.innerHTML = `${data.main.temp}&deg;C`;
     description.textContent = `- ${data.weather[0].description}`;
 }
