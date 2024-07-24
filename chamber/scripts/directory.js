@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 memberCard.className = 'member-card';
                 memberCard.innerHTML = `
                     <img src="${member.image}" alt="${member.name} loading="lazy" width="auto" height="80">
-                    <h3>${member.name}</h3>
+                    <h2>${member.name}</h2>
                     <p><strong>Address:</strong> ${member.address}</p>
                     <p><strong>Phone:</strong> ${member.phone}</p>
                     <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 memberItem.innerHTML = `
                     <img src="${member.image}" loading="lazy" width="auto" height="80" alt="${member.name}">
                     <div>
-                        <h3>${member.name}</h3>
+                        <h2>${member.name}</h2>
                         <p><strong>Address:</strong> ${member.address}</p>
                         <p><strong>Phone:</strong> ${member.phone}</p>
                         <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>

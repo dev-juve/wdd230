@@ -83,7 +83,7 @@ main {
 
 .hero img {
     width: 100%;
-    height: 500px;
+    height: auto;
 }
 
 .hero-text {
@@ -127,8 +127,12 @@ main {
     padding: 20px;
 }
 
+.quick-links li {
+    padding: 10px;
+  }
 .quick-links a {
     color: #E0E1DD;
+    padding: 10px;
   }
 
 .quick-links a:hover {
@@ -200,6 +204,10 @@ main {
 
 .spotlights h2 {
     grid-column: 1/3;
+}
+
+.spotlighted-company a {
+    background-color: #E0E1DD;
 }
 
 #spotlight-p {
@@ -421,6 +429,11 @@ form input[type="submit"]:hover {
 
 
 /* Member Directory Styles */
+#member-h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 .view-toggle {
     display: flex;
     justify-content: center;
@@ -435,6 +448,7 @@ form input[type="submit"]:hover {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .view-toggle button:hover {
@@ -535,7 +549,7 @@ form input[type="submit"]:hover {
 
     .hero img {
         width: 100%;
-        max-height: 300px;
+        max-height: auto;
     }
 
     .hero-text {
