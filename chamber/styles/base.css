@@ -561,6 +561,7 @@ form input[type="submit"]:hover {
         margin-top: -40px;
         justify-self: center;
     } 
+
     
     .navigation a {
         display: none;
@@ -568,6 +569,7 @@ form input[type="submit"]:hover {
         text-align: center;
         text-decoration: none;
         /* color: darkblue; */
+        margin-bottom: 10px;
     }
     .navigation a:hover {
         background-color: darkblue;
@@ -598,6 +600,19 @@ form input[type="submit"]:hover {
         width: 100%;
     }
 
+    #next-event {
+        margin-right: 15px;
+    }
+
+    footer.white {
+        color: #E0E1DD;
+    }
+
+    /* ABOUT US Page */
+    #aboutus-main {
+        padding: 15px;
+    }
+
     /* Discover Page */
     .content-wrapper2 {
         display: flex;
@@ -622,6 +637,12 @@ form input[type="submit"]:hover {
         filter: none;
     }
     /* ------------------- */
+
+    /* DIRECTORY PAGE */
+
+    #directory {
+        padding: 15px;
+    }
 
 
     /* ---------JOIN--------- */
