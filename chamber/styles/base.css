@@ -607,6 +607,9 @@ form input[type="submit"]:hover {
     a[x-apple-data-detectors].white {
         color: inherit !important;
     }
+    a[href^="tel"] {
+        color: inherit; /* Inherit text color of parent element. */
+      }
 
     /* ABOUT US Page */
     #aboutus-main {
