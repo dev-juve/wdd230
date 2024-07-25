@@ -604,8 +604,8 @@ form input[type="submit"]:hover {
         margin-right: 15px;
     }
 
-    footer.white {
-        color: #E0E1DD;
+    a[x-apple-data-detectors].white {
+        color: inherit !important;
     }
 
     /* ABOUT US Page */
