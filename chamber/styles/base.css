@@ -88,21 +88,26 @@ main {
 
 .hero-text {
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #e0e1ddcb;
+    color: #e0e1dd;
     font-size: 1.5rem;
+}
+
+.hero-text h1 {
+    background-color: #541a8b7a;
 }
 
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background:#1B263B;
+    background: #1d0138;
     color: #E0E1DD;
     text-decoration: none;
     font-weight: bold;
     margin-top: 10px;
+    border-radius: 6px;
 }
 
 .cta-button:hover {
@@ -166,6 +171,33 @@ main {
     cursor: pointer;
 }
 
+.events #event-container {
+    background: #0D1B2A;
+    color: #E0E1DD;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.events .event-navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.events .event-navigation button {
+    background-color: rgba(0, 14, 139, 0.541); 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #E0E1DD;
+    font-weight: bold;
+}
+
+.events .event-navigation button:hover {
+    background-color: darkblue;
+}
+
 
 .weather-card {
     display: grid;
@@ -177,6 +209,7 @@ main {
     align-content: center;
     flex-direction: column;
     grid-column: 1/2;
+    margin-bottom: 20px;
 }
 
 #weather-forecast {
@@ -549,7 +582,7 @@ form input[type="submit"]:hover {
 
     .hero img {
         width: 100%;
-        max-height: auto;
+        height: auto;
     }
 
     .hero-text {

@@ -1,50 +1,3 @@
-// // Function to handle adding/removing the hamburger menu
-function handleHamburgerMenu() {
-    const width = window.innerWidth;
-    const navigation = document.querySelector("nav");
-    let menuButton = document.querySelector("#menuButton");
-
-    if (width < 768) {
-        // Add the hamburger menu if it doesn't exist
-        if (!menuButton) {
-            menuButton = document.createElement("button");
-            navigation.setAttribute("class", "navigation");
-            navigation.insertAdjacentElement("beforebegin", menuButton);
-            menuButton.setAttribute("id", "menuButton");
-            menuButton.addEventListener('click', () => {
-                navigation.classList.toggle('open');
-                menuButton.classList.toggle('open');
-            });
-        }
-    } else {
-        // Remove the hamburger menu if it exists
-        if (menuButton) {
-            menuButton.remove();
-            navigation.classList.remove('navigation', 'open');
-        }
-    }
-}
-
-// Initial load
-handleHamburgerMenu();
-
-// Handle window resize
-window.addEventListener('resize', handleHamburgerMenu);
-
-
-// Active nav links effect
-document.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelectorAll('.nav-links a');
-    navLinks.forEach(link => {
-        if (link.href === window.location.href) {
-            link.classList.add('active');
-        }
-        else {
-            link.classList.remove("active");
-        }
-    });
-});
-
 
 // Open Weather API Implementation
     // Today Weather
@@ -59,7 +12,6 @@ async function getWeatherData() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            // console.table(data);
             displayWeatherInfo(data);
         }
         else {
@@ -216,3 +168,65 @@ document.addEventListener('DOMContentLoaded', () => {
         banner.style.display = 'none';
     });
 });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const events = [
+            {
+                title: "Annual Business Expo",
+                date: "September 15, 2024",
+                location: "Karibe Convention Center, Juvenat 7, P-au-P",
+                description: "Join us for our Annual Business Expo, where local businesses showcase their products and services. This is a great opportunity for networking and learning about new business trends."
+            },
+            {
+                title: "Chamber of Commerce Awards Gala",
+                date: "November 20, 2024",
+                location: "Marriott Hotel, Turgeau, P-au-P",
+                description: "Celebrate the achievements of our local businesses at our annual Awards Gala. Enjoy an evening of fine dining, entertainment, and recognition of outstanding businesses in our community."
+            },
+            {
+                title: "Holiday Networking Event",
+                date: "December 10, 2024",
+                location: "Yanvalou Câfé-Bar-Restaurant, Pacot, P-au-P",
+                description: "Ring in the holiday season with fellow business owners and community leaders at our Holiday Networking Event. This is a wonderful opportunity to build relationships and enjoy some festive cheer."
+            },
+            {
+                title: "Spring Business Forum",
+                date: "March 25, 2025",
+                location: "University of Port-au-Prince Auditorium",
+                description: "Our Spring Business Forum features keynote speakers, panel discussions, and workshops on the latest business strategies and innovations. Don’t miss this opportunity to gain valuable insights and grow your business."
+            },
+            {
+                title: "Summer Networking Picnic",
+                date: "July 10, 2025",
+                location: "Fort Jacques & Alexandre, Kenscoff",
+                description: "Enjoy a relaxed afternoon of networking and fun at our Summer Networking Picnic. This family-friendly event includes games, food, and opportunities to connect with other business owners."
+            }
+        ];
+
+        let currentIndex = 0;
+
+        function displayEvent(index) {
+            const event = events[index];
+            const eventContainer = document.getElementById("event-container");
+            eventContainer.innerHTML = `
+                <h3>${event.title}</h3>
+                <p><strong>Date:</strong> ${event.date}</p>
+                <p><strong>Location:</strong> ${event.location}</p>
+                <p>${event.description}</p>
+            `;
+        }
+
+        document.getElementById("prev-event").addEventListener("click", function() {
+            currentIndex = (currentIndex - 1 + events.length) % events.length;
+            displayEvent(currentIndex);
+        });
+
+        document.getElementById("next-event").addEventListener("click", function() {
+            currentIndex = (currentIndex + 1) % events.length;
+            displayEvent(currentIndex);
+        });
+
+        // Initial display
+        displayEvent(currentIndex);
+    });
+

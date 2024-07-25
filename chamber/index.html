@@ -44,10 +44,16 @@
             <section class="main-content">
                 <section class="events">
                     <h2>Upcoming Events</h2>
-                    <p>Event details will be listed here.</p>
                     <div id="banner" class="banner" style="display: none;">
                         <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
                         <button id="closeBanner">❌</button>
+                    </div>
+                    <div id="event-container">
+                        <!-- Event content will be injected here dynamically -->
+                    </div>
+                    <div class="event-navigation">
+                        <button id="prev-event">Previous</button>
+                        <button id="next-event">Next</button>
                     </div>
                     
                 </section>
@@ -56,7 +62,7 @@
                     <div class="weather-card">
                         <div class="current-weather">
                             <h3>Today</h3>
-                            <span id="icon"></span> <span id="current-weather"></span></p></div>
+                            <span id="icon"></span> <span id="current-weather"></span></div>
                         <div id="weather-forecast"></div>
                     </div>
                 </section>
@@ -91,5 +97,6 @@
         document.getElementById("lastModified").textContent = document.lastModified;
     </script>
     <script src="./scripts/chamber.js"></script>
+    <script src="./scripts/hamburger-menu.js"></script>
 </body>
 </html>
