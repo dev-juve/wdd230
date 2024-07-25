@@ -604,9 +604,9 @@ form input[type="submit"]:hover {
         margin-right: 15px;
     }
 
-    a[x-apple-data-detectors].white {
+    /* a[x-apple-data-detectors].white {
         color: inherit !important;
-    }
+    } */
     a[href^="tel"] {
         color: inherit;
       }
