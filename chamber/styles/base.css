@@ -608,7 +608,7 @@ form input[type="submit"]:hover {
         color: inherit !important;
     }
     a[href^="tel"] {
-        color: inherit; /* Inherit text color of parent element. */
+        color: inherit;
       }
 
     /* ABOUT US Page */
